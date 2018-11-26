@@ -6,8 +6,12 @@ package com.xhk.web.servlet;
  */
 public class TestClass {
 
+	@Override
+	public String toString() {
+		return "11111111111";
+	}
+
 	public static void main(String[] args) {
-		System.out.println(111);
+		System.out.println(new TestClass());
 	}
 }
-
