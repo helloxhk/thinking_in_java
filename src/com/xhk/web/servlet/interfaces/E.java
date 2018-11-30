@@ -21,7 +21,7 @@ public interface E {
 		}
 	}
 
-	static void main(String[] args) {
+	/*static void main(String[] args) {
 		E e = new E() {
 			@Override
 			public void g() {
@@ -31,5 +31,5 @@ public interface E {
 
 		E.Demo demo = new E.Demo();
 		demo.print();
-	}
+	}*/
 }

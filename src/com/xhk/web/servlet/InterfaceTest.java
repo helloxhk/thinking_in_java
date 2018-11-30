@@ -5,8 +5,8 @@ public interface InterfaceTest {
 	int i = 1;
 
 
-	public default void test() {
-		System.out.println("default");
-	}
+//	public default void test() {
+//		System.out.println("default");
+//	}
 
 }
