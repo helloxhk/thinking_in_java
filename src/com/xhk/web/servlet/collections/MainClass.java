@@ -55,7 +55,10 @@ public class MainClass {
 //		List<Integer> list2 = Arrays.asList(ia);
 //		System.out.println(list == list2);
 
-		System.err.println("sssssss");
+//		System.err.println("sssssss");
+
+		"".concat("aaa");
+
 	}
 
 
