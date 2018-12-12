@@ -1,4 +1,4 @@
-package com.xhk.web.servlet;
+package com.xhk.web.servlet.test;
 
 import com.xhk.web.servlet.innerclass.Outer;
 import com.xhk.web.servlet.interfaces.Content;

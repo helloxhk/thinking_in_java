@@ -1,4 +1,4 @@
-package com.xhk.web.servlet;
+package com.xhk.web.servlet.test;
 
 import java.util.Random;
 
