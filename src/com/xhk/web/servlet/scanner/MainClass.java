@@ -1,7 +1,5 @@
 package com.xhk.web.servlet.scanner;
 
-import com.xhk.web.servlet.factory.Chess;
-
 import java.util.Random;
 
 /**
