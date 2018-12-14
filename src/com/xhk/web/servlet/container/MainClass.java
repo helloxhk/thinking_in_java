@@ -33,5 +33,70 @@ public class MainClass {
 		System.out.println("----------------------");
 
 		System.out.println(('A' > 'B'));
+
+		System.out.println("----------------------");
+
+		LinkedHashMap<Integer, String> lh = new LinkedHashMap<Integer, String>(16 , 0.75f, true){{
+			put(0, "x");
+			put(1, "x");
+			put(2, "x");
+			put(3, "x");
+			put(4, "x");
+			put(5, "x");
+			put(6, "x");
+			put(7, "x");
+			put(8, "x");
+			put(9, "x");
+		}};
+		System.out.println(lh.get(null)); // 0 1 2 3 4 5 6 7 8 9
+		for (int i = 0; i < 6; i++) {
+			lh.get(i);
+		}
+		System.out.println(lh); // 6 7 8 9 0 1 2 3 4 5
+		lh.get(0);
+		System.out.println(lh); // 6 7 8 9 1 2 3 4 5 0
+
+		System.out.println("----------------------");
+
+		HashMap<HashObj,Object> hm = new HashMap(){{
+			put(new HashObj(1), 1);
+			put(new HashObj(1), 1);
+			put(new HashObj(1), 1);
+			put(new HashObj(1), 1);
+
+		}};
+		System.out.println(hm.size());
+
+		System.out.println("----------------------");
+		HashMap<Integer,Integer> hashMap = new HashMap(){{
+			put(1, null);
+			put(2, null);
+			put(3, null);
+			put(4, null);
+			put(5, null);
+		}};
+		System.out.println(hashMap);
+		Integer.decode("");
+	}
+}
+
+class HashObj {
+	private int i;
+
+	public HashObj(int i) {
+		this.i = i;
+	}
+
+	@Override
+	public boolean equals(Object object) {
+		if (this == object) return true;
+		if (object == null || getClass() != object.getClass()) return false;
+		HashObj hashObj = (HashObj) object;
+		return i == hashObj.i;
+	}
+
+	@Override
+	public int hashCode() {
+		return i;
 	}
 }
