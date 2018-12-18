@@ -76,7 +76,18 @@ public class MainClass {
 			put(5, null);
 		}};
 		System.out.println(hashMap);
-		Integer.decode("");
+
+		System.out.println("----------------------");
+
+		Iterator<Integer> iterator = list.iterator();
+		list.add(1);
+		try {
+			Integer next = iterator.next();
+		} catch (ConcurrentModificationException e) {
+			// 获取迭代器后，再堆容器进行操作，将报出并发修改异常
+			// e.printStackTrace();
+			System.err.println("并发修改");
+		}
 	}
 }
 
