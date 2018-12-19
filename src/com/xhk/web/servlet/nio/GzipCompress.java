@@ -14,7 +14,7 @@ import java.util.zip.GZIPOutputStream;
 public class GzipCompress {
 
 	public static void main(String[] args) throws IOException {
-		/*BufferedReader in = new BufferedReader(new FileReader("src/temp/io.temp"));
+		BufferedReader in = new BufferedReader(new FileReader("src/temp/io.temp"));
 		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new GZIPOutputStream(new FileOutputStream("src/temp/io.gzip"))));
 		char[] buff = new char[1024];
 		int i;
@@ -22,7 +22,7 @@ public class GzipCompress {
 			out.write(buff, 0, i);
 		}
 		in.close();
-		out.close();*/
+		out.close();
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(new GZIPInputStream(new FileInputStream("src/temp/io.gzip"))));
 
