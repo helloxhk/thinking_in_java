@@ -39,6 +39,7 @@ public class EvenChecker implements Runnable {
 	}
 
 	public static void main(String[] args) {
-		EvenChecker.test(new EvenGenerator());
+//		EvenChecker.test(new EvenGenerator());
+		EvenChecker.test(new MutexEvenGenerator());
 	}
 }
