@@ -25,5 +25,9 @@ public class MainClass {
 		}
 		System.out.println("Total " + Entrance.getTotalCount());
 		System.out.println("SumNumbers " + Entrance.sumNumbers());
+
+		System.out.println("******************************");
+
+
 	}
 }

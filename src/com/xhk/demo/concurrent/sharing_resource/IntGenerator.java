@@ -1,5 +1,6 @@
 package com.xhk.demo.concurrent.sharing_resource;
 
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
