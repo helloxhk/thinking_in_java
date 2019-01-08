@@ -1,7 +1,5 @@
 package com.xhk.demo.concurrent;
 
-import com.xhk.demo.concurrent.entrances.Count;
-
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;

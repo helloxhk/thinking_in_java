@@ -2,6 +2,7 @@ package com.xhk.demo.concurrent.entrances;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -28,6 +29,7 @@ public class MainClass {
 
 		System.out.println("******************************");
 
+		ScheduledExecutorService executor = Executors.newScheduledThreadPool(2);
 
 	}
 }
